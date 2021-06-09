@@ -1,0 +1,61 @@
+/*MODAL CON FORMULARIO DE CONTACTO*/
+
+.modal-header{
+    background-color: rgb(16, 16, 88);
+    .modal-title {
+        color: white;
+
+    }
+    button {
+        background-color: white;
+    }
+}
+
+.form-contact{
+    width: 90%;
+    padding-left: 10%;
+    padding-bottom: 10px;
+    h2{
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .user-info{
+        display: flex;
+        flex-direction: column;
+        label{
+            font-weight: 600;
+        }
+        .user-info input{
+            width: 100%;
+            padding: 5px 15px 5px;
+            border: none;
+            border-bottom: 2px solid #d1d1d1;
+        }          
+        textarea {
+            width: 100%;
+            padding: 5px 15px 5px;
+            border: none;
+            border-bottom: 2px solid #d1d1d1;
+            max-width: 100%;
+            min-width: 100%;
+            max-height:150px;
+        }
+        button {
+            width: 180px;
+            background: red;
+            padding: 10px;
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-size: medium;
+            font-weight: 700;
+            align-self: flex-end;
+            margin: 20px;
+            cursor: pointer;
+            &:hover {
+                background-color: rgb(194, 24, 24);
+            }
+        }   
+    }
+}

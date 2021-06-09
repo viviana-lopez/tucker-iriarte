@@ -1,0 +1,56 @@
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+/*   ---------DESAFIO 12 COMPLEMENTARIO--------   */
+/*
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+}
+
+$bg-body-gracias: rgba(0, 0, 0, 0.308);
+$bg-mensaje-gracias : white;
+$margin-zero: 0%;
+$border-px100: 100px;
+$padding-em1: 1em;
+*/
+
+
+/*GRACIAS.HTML - respuesta al enviar formulario de contacto*/
+.mensaje {
+    background-color: $bg-body-gracias;
+    .mensaje-gracias {
+        @include flexbox-center;/*mixin*/
+        .mensaje-exito{
+            text-align: center;
+            margin-top: $margin-zero + 16 - 1; /*operadores de suma y resta en un mismo item*/
+            background-color: $bg-mensaje-gracias;
+            border-radius: $border-px100 / 4; /*operador de división*/
+            padding: $padding-em1 * 2 ; /*operador de multiplicación*/
+            button a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+/*SCSS ORIGINAL SIN APLICARLE EL DESAFÍO 12 COMPLEMENTARIO*/
+/* .mensaje {
+    background-color: rgba(0, 0, 0, 0.308);
+    .mensaje-gracias {
+        display: flex;
+        justify-content: center;
+        .mensaje-exito{
+            text-align: center;
+            margin-top: 15%;
+            background-color: white;
+            border-radius: 25px;
+            padding: 2em;
+            button a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}*/

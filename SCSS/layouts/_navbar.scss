@@ -1,0 +1,17 @@
+/*NAVBAR*/
+.navbar-container {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    top: 2em;
+    right: 5em;
+    z-index: 10;
+    @media (max-width: 576px) {
+        top: 1em;
+        right: 2em;
+    }
+    a:hover {
+        color: red !important; 
+    border-bottom: 3px solid red !important; 
+    }
+}

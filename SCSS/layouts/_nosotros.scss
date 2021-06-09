@@ -1,0 +1,35 @@
+/*NOSOTROS.HTML*/
+.nosotros-titulo{
+    padding: 0.5em;
+    text-align: right;
+}
+
+.equipos {
+    margin: 2em 4em;
+    .equipos-texto {
+        p {
+            font-size: large;
+            font-weight: 600;
+            padding: 1em;
+        }
+        ul {
+            li{
+                padding-left: 2em;
+            }
+        }
+    }
+    .equipos-marcas{
+        @include flexbox-full;
+        margin: 2em 0;
+        img {
+            width: 100px;
+            @media (max-width: 575px) {
+                padding: 2em 0;
+            }
+        }
+    }
+}
+
+.historia-texto{
+    margin: 2em 4em;
+}

@@ -1,0 +1,476 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* /////////////////////***************************BARRA DE NAVEGACION - TODOS LOS HTML**********************\\\\\\\\\\\\\\\\\\\\\\\ */
+/*ok*/
+.navbar-container {
+    display: flex;
+    justify-content: flex-end; /* para que la barra quede del lado derecho*/
+    position: fixed; /*para que el menú quede fijo en la pantalla*/
+    top: 2em;
+    right: 5em; /*posición donde quedará fija*/
+    z-index: 10;/*para que pase por arriba de todos los items*/
+}
+/*ok*/
+@media only screen and (max-width: 576px) {
+    .navbar-container{
+    display: flex;
+    justify-content: flex-end; /* para que la barra quede del lado derecho*/
+    position: fixed; /*para que el menú quede fijo en la pantalla*/
+    top: 1em;
+    right: 2em; /*posición donde quedará fija*/
+    z-index: 10;/*para que pase por arriba de todos los items*/} }
+
+/*ok*/
+header a:hover {
+    color: red !important; /* para que le cambie el color a las letras al posicionarse sobre el botón del menú*/
+    border-bottom: 3px solid red !important; /* para que lo subraye al posicionarse sobre el botón del menú*/
+}
+/*ok*/
+@media only screen and (max-width: 576px) {
+    .logo-header {
+        padding-top: 3em;/*para que en dispositivos con pantallas de menos de 576px se genere espacio y el menú no tape el logo de la empresa*/
+    }
+}
+    
+
+/* //////////////////////************************WHATSAPP ANCLADO - TODOS LOS HTML************************\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*ok*/
+.whatsapp {
+    position: fixed;/*posicionamiento para que el icono quede siempre en el mismo sitio dela pantalla*/
+    right: 5em;/*posicionamiento para que el icono quede siempre en el mismo sitio dela pantalla*/
+    bottom: 3em;/*posicionamiento para que el icono quede siempre en el mismo sitio dela pantalla*/
+    width: 48px;/*tamaño del icono*/
+    animation-name: efecto-whatsapp;
+    animation-iteration-count: infinite;/*para que la animacion se repita todo el tiempo*/
+    animation-duration: 8s;/*duracion de cada ciclo de la animación*/
+    animation-delay: 5s;/*tiempo de demora para iniciar la animación desde que se abre la página*/
+    filter: drop-shadow(0 0 20px rgb(44, 44, 44));}/*sombra del icono para destacarlo*/
+  
+/*ok*/
+.whatsapp:hover {
+    transform: scale(1.5, 1.5);/*efecto de ampliar el tamaño al pasar el cursor por arriba*/
+}
+/*ok*/
+@keyframes efecto-whatsapp { /*efecto de movimiento del whatsapp*/
+    0% { transform:translateX(12px);}
+    1% { transform: translateX(-12px);}
+    2% { transform: translateX(12px);}
+    3% { transform: translateX(-12px);}
+    4% { transform: translateX(12px);}
+    5% { transform: translateX(-12px);}
+    6% { transform: translateX(12px);}
+    7% { transform: translateX(-12px);}
+    8% { transform: translateX(12px);}
+    9% { transform: translateX(0px);}
+}
+
+/* /////////////////////////************************CARROUSEL - INDEX-HTML********************************\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/*ok*/
+.carrousel {
+    display: flex;
+    justify-content: center;/*para que el carrousel quede en el centro de la pantalla*/
+    background-color: black;/*color de fondo detrás del carrousel*/
+}
+
+/* ////////////////////////*************************SERVICIOS -INDEX.HTML*********************************\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/*ok*/
+.main-servicios-titulo {
+    padding: 2em; /*para ampliar el espacio del título y darle márgenes*/
+}
+
+/*ok*/
+.contenedor-botones-servicios {
+    justify-content: space-around;/*para que los "botones" queden con margenes y espacio entre si*/
+    margin: 2em;
+}
+
+/*ok*/
+.contenedor-servicio {
+    text-align: center;/*para centrar todos los elementos dentro de su contenedor*/
+    padding-top: 2em;/*para generar más espacio sobre el título del servicio*/
+    margin-bottom: 3em;/*para generar más margen y que quede espacio para las sombras de los contenedores de los servicios*/
+    border-radius: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+/*ok*/
+.contenedor-servicio a, li {
+    text-decoration: none; /* para quitarle el subrayado a lo que está dentro del vínculo*/
+    list-style: none;/*para quitarle la viñeta al estilo de la lista*/
+    color: black;/*para que todo el texto dentro del contenedor de los servicios tengan la tipografía en negro*/
+}
+/*ok*/
+.contenedor-servicio ul {
+    padding: 0;/*para quitarle el margin original de la lista*/
+}
+
+/*ok*/
+.contenedor-servicio-imagen img{width: 50%;} /*para asignar tamaño a las imágenes de los servicios*/
+
+/*ok*/
+.imagen-fertilizaciones {
+    padding-top: 1em; /*para acomodar la imagen y que quede alineada junto con su texto a la misma altura que sus compañeras */
+    opacity: 0.8;/*para aclarar el color negro de la imagen*/
+    filter: blur(1px);/*para desenfocar la imagen*/
+}
+
+/*ok*/
+.imagen-pulverizaciones {
+    padding-top: 0.5em;/*para acomodar la imagen y que quede alineada junto con su texto a la misma altura que sus compañeras */
+}
+
+/*ok*/
+.contenedor-servicio-boton p {
+    font-size: x-large;
+    font-weight: 600;/*letra más gruesa para que destaque más*/
+    letter-spacing: 4px;/*mayor separacion entre letras para diferenciarlo del resto del texto*/
+    background-color: rgb(238, 234, 234);/*color de fondo del simil boton "ver más"*/
+    padding:0.5em 0;/*espacio extra para dar forma al simil boton*/
+    border-bottom-right-radius:  20px;/*bordes redondeados para que imite a su div contenedor*/
+    border-bottom-left-radius:  20px;/*bordes redondeados para que imite a su div contenedor*/
+}
+
+/*ok*/
+.main-servicios a:hover {
+    color: red !important; /* para que le cambie el color a las letras al posicionarse sobre el botón del menú*/
+  ;
+}
+
+/*ok*/
+.contenedor-servicio:hover {
+    filter: drop-shadow(0 0 20px rgb(44, 44, 44));
+}
+
+
+/* ////////////////////////*************************CONTACTO-INDEX.HTML*********************************\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/*ok*/
+.main-contacto-titulo {
+    padding: 2em;/*para ampliar el espacio del título y darle márgenes*/
+    text-align: right;/*para alinear el título a la derecha*/
+}
+
+
+/* //////////////////////**************************FOOTER-INDEX.HTML*************************************\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/*ok*/
+a {
+    text-decoration: none;/* para quitarle la línea a los íconos de las redes sociales*/
+}
+
+/*ok*/
+.footer {
+    display: flex;/*para posicionar a los iconos en una fila (horizontalmente) */
+    padding: 1.5em 4em;/*espacio extra para darle tamaño al footer*/
+    background-color: rgb(17, 17, 17);/*color del fondo del footer*/
+}
+
+/*ok*/
+.footer p {
+    font-size: large;/*tamaño de la letra del footer*/
+    font-weight: 600;/*peso de la letra del footer*/
+}
+
+/*ok*/
+.footer p {
+    color: white;/*color de la tipografía en el footer*/
+    padding: 0 1em;/*espacio del footer*/
+    
+}
+
+/*ok*/
+.footer-icon i{
+    font-size: 1.5em;/*tamaño de los iconos de las redes sociales*/
+    color: white;/*color de la tipografía en el footer*/
+    padding: 0 0.5em;
+}
+
+
+/* /////////////////////////////****************SEPARADORES DECORATIVOS - TODOS LOS HTML**********************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*ok*/
+.separador-arriba {
+    width: 100%;/*ancho del separador entre secciones*/
+    height: 5px;/*alto del separadorentre secciones*/
+    background-color: red;/*color del separador*/
+}
+
+/*ok*/
+.separador-subtitulos-derecha {
+    width: 70%;
+    background-color: red;/*color del separador*/
+   margin-left: 30%;/*para posicionarlo a la derecha*/
+}
+
+/*ok*/
+.separador-subtitulos-izquierda {
+    width: 70%;/*ancho del separador para los subtitulos*/
+    height: 5px;/*alto del separador*/
+    background-color: red;/*color del separador*/
+}
+
+/* ///////////////////////////*****************BOTONES LATERALES - FERTILIZACIONES/PULVERIZACIONES/SIEMBRA.HTML**************\\\\\\\\\\\\\\\\\*/
+/*ok*/
+.boton-izq i{
+    position: fixed;/*para dejar la flecha fija en la pantalla*/
+    left: 0;/*posición en donde queda fija*/
+    bottom: 35%;/*posición en donde queda fija*/
+    font-size: 3em;/*tamaño del ícono*/
+    color: white;/*color del ícono*/
+    padding-left: 2em;/*espacio para dar el efecto de movimiento*/
+    background-color: rgb(150, 147, 147, 0.3);/*color de fondo con transparencia*/
+    transition: all 2s;/*para suavizar el efecto de movimiento de la flecha lateral*/
+}
+
+/*ok*/
+.boton-izq i:hover {
+    transform: translateX(-2em)/*efecto de movimiento hacia a donde apunta la flecha alpasarle el cursor por arriba*/
+}
+
+/*ok*/
+.boton-der i{
+    position: fixed;/*para dejar la flecha fija en la pantalla*/
+    right: 0;/*posición en donde queda fija*/
+    bottom: 35%;/*posición en donde queda fija*/
+    font-size: 3em;/*tamaño del ícono*/
+    color: white;/*color del ícono*/
+    padding-right: 2em;/*espacio para dar el efecto de movimiento*/
+    background-color: rgba(150, 147, 147, 0.3);/*color de fondo con transparencia*/
+    transition: all 2s;/*para suavizar el efecto de movimiento de la flecha lateral*/
+}
+
+/*ok*/
+.boton-der i:hover {
+    transform: translateX(2em)/*efecto de movimiento hacia a donde apunta la flecha alpasarle el cursor por arriba*/
+}
+
+/*ok*/
+@media only screen and (max-width: 575px) {/*para adaptar el padding del boton a más pequeño en dispositivos móviles*/
+    .boton-izq i {
+        padding-left: 0.5em;
+    }
+
+    .boton-izq i:hover {
+        transform: translateX(-0.5em)/*efecto de movimiento hacia a donde apunta la flecha alpasarle el cursor por arriba*/
+    }
+
+    .boton-der i {
+        padding-right: 0.5em;
+    }
+
+    .boton-der i:hover {
+        transform: translateX( 0.5em)
+    }
+}
+    
+/*ok*/
+@media only screen and (min-width: 576px) and (max-width: 991px) {/*para adaptar el padding del boton a una medida media para tablets*/
+    .boton-izq i {
+        padding-left: 1em;
+    }
+
+    .boton-izq i:hover {
+        transform: translateX(-1em)/*efecto de movimiento hacia a donde apunta la flecha alpasarle el cursor por arriba*/
+    }
+
+    .boton-der i {
+        padding-right: 1em;
+    }
+
+    .boton-der i:hover {
+        transform: translateX( 1em)
+    }
+}
+
+
+
+/* /////////////////////////////////////***********************NOSOTROS.HTML************************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ */
+/*ok*/
+.equipos, .historia-texto {
+    margin: 2em 4em;
+}
+
+/*ok*/
+.nosotros-titulo  {
+    padding: 0.5em;/*para ampliar el espacio del título y darle márgenes*/
+    text-align: right;/*para que el título quede del lado derecho*/
+}
+
+/*ok*/
+.equipos-texto p{
+    font-size: large;/*para poner un tamaño más grande del original*/
+    font-weight: 600;/*para hacer la letra más gruesa*/
+    padding: 1em;
+}
+
+/*ok*/
+.equipos-texto li {
+    padding-left: 2em;
+}
+
+/*ok*/
+.equipos-marcas {
+    display: flex;/*para usar las propiedasdes del flexbox*/
+    justify-content: space-around;/*para que haya espacio entre items y el contenedor*/
+    align-content: space-around;/*para que cuando se adapte a los dispositivos se vaya acomodando dejando espacio entre las imágenes*/
+    align-items: center;/*para que centre la altura en la fila*/
+    align-content: space-around;/*para que al usar dispositivos moviles y se acomoden formando más filas deje separacion entre las filas que se forman*/
+    flex-wrap: wrap;/*para que a medida que se reduzca el tamaño de la pantalla los iconos bajen en ella para irse adaptando formando filas*/
+    margin: 2em 0;
+}
+
+/*ok*/
+@media only screen and (max-width: 575px) {/*para que mejore el espacio entre los logos al acomodarse las filas en dispositivos móviles*/
+    .marcas-img {
+        padding: 2em 0;
+    }
+}
+
+/*ok*/
+.marcas-img {
+    width: 100px;/*tamaño de las imagenes para que sean todas iguales*/
+}
+
+
+/* ////////////////////////////////*************************FERTILIZACIONES/PULVERIZACIONES/SIEMBRA.HTML***************************\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*ok*/
+.titulo-derecha {
+    padding: 0.5em;/*para ampliar el espacio del título y darle márgenes*/
+    text-align: right;/*para que el título quede del lado derecho*/
+}
+
+/*ok*/
+.servicio {
+    margin: 0 10%;
+    margin-top: 3em;
+    margin-bottom: 1em;
+}
+
+/*ok*/
+.texto-servicio {
+    padding: 2em;
+}
+
+/*ok*/
+.beneficios {
+    margin: 0 10%;
+    margin-bottom: 2em;
+}
+
+/*ok*/
+.image-container1 {
+    display: flex;/*para que los ponga en fila (horizontalmente) uno al lado del otro*/
+    justify-content: space-around;/*para que deje espacio entre las fotos y a los costados del contenedor*/
+    align-content: space-around;/*para que al usar dispositivos moviles y se acomoden formando más filas deje separacion entre las filas que se forman*/
+    flex-wrap: wrap;/*para que a medida que se reduzca el tamaño de la pantalla los iconos bajen en ella para irse adaptando formando filas*/
+}
+
+/*ok*/
+.image1 {
+    width: 150px;/*tamaño de la imagen*/
+}
+
+/*ok*/
+.image-container2 {
+    display: flex;/*para que los ponga en fila (horizontalmente) uno al lado del otro*/
+    justify-content: space-around;/*para que deje espacio entre las fotos y a los costados del contenedor*/
+    align-content: space-around ;/*para que al usar dispositivos moviles y se acomoden formando más filas deje separacion entre las filas que se forman*/
+    flex-wrap: wrap;/*para que a medida que se reduzca el tamaño de la pantalla los iconos bajen en ella para irse adaptando formando filas*/
+}
+
+/*ok*/
+.image2 {
+    width: 150px;/*tamaño de la imagen*/
+}
+
+
+/*          ++++++++++++++++++++++++++++FORMULARIO DE CONTACTO+++++++++++++++++++++++++++++++++        */
+form.form-contact {/*tamaño y márgenes del contenedor del formulario de contacto*/
+    width: 90%;
+    padding-left: 10%;
+    padding-bottom: 10px;
+}
+
+form.form-contact h2 {/*tipografía del título del formulario de contacto*/
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.user-info {/*orientacion de los items a completar dentro del formulario de contacto*/
+    display: flex;
+    flex-direction: column;/*para poner los items en columna*/
+}
+
+form.form-contact label {/*tamaño de tipografía en todas las label que indican lo que hay que completar dentro del formulario*/
+    font-weight: 600;
+}
+
+form.form-contact input, form.form-contact textarea {/*tamaño y márgenes de los casilleros input para completar la información dentro del formulario*/
+    width: 100%;
+    padding: 5px 15px 5px;
+
+    border: none;
+    border-bottom: 2px solid #d1d1d1;
+}
+
+form.form-contact textarea {/*tamaño del casillero textarea para completar el mensaje dentro del formulario*/
+   max-width: 100%;
+   min-width: 100%;
+   max-height:150px;
+}
+
+form.form-contact button[type="submit"] {/*características del boton enviar dentro del formulario*/
+    width: 180px;
+    background: red;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: medium;
+    font-weight: 700;
+ 
+    align-self: flex-end;
+    margin: 20px;
+    cursor: pointer;
+}
+
+form.form-contact button[type="submit"]:hover {/*características del boton enviar dentro del formulario al pasarle el cursor encima*/
+    background-color: rgb(194, 24, 24);
+} 
+
+.user-info input[type="text"]:invalid,
+.user-info input[type="email"]:invalid {/*para que obligue e indique a completar correctamente los campos input de nombre y email*/
+    border: 1px solid red;
+    color: red;
+    box-shadow: none;
+}
+
+/* ///////////////////////////////***********************MENSAJE EXITOSO*********************\\\\\\\\\\\\\\\\\\' */
+
+/*ok*/
+.mensaje {
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+/*ok*/
+.mensaje-gracias {
+    display: flex;
+    justify-content: center;
+}
+
+/*ok*/
+.mensaje-exito {
+    text-align: center;
+    margin-top: 15%;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2em;
+}
+
+/*ok*/
+.mensaje-exito a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,72 @@
+@import "../utilities/mixins";
+
+/*SECCION SERVICIOS - INDEX.HTML*/
+.main-servicios {
+    background-color: white;
+    p {
+        @include titulos;
+    }
+    h1 {
+        padding: 1em 2em;
+        font-size: large;
+        font-weight: 500;
+        line-height: 1.5em;
+        color: #101058;
+    }
+}
+
+.contenedor-botones-servicios {
+    justify-content: space-around;
+    margin: 1em;      
+    .contenedor-servicio {
+        text-align: center;
+        padding-top: 2em;
+        margin-bottom: 3em;
+        border-radius: 20px;
+        background-color: rgb(245, 245, 245);
+        border:5px solid rgb(238, 234, 234);
+        &:hover {
+            filter: drop-shadow(0 0 20px rgb(44, 44, 44))
+        }
+        a {
+            @include style-none;
+            &:hover {
+                color: red !important;
+            }
+            .contenedor-servicio-imagen{
+                img {
+                    width: 50%;
+                }
+            }
+            .imagen-fertilizaciones {
+                padding-top: 1em;
+            }
+            .imagen-pulverizaciones{
+                padding-top: 0.5em;
+            }
+            .contenedor-servicio-subtitulo{
+                ul {
+                    padding: 0;
+                    li{
+                        @include style-none;
+                        h3 {
+                            font-size: medium;
+                        }
+                    }
+                }                   
+            }
+            .contenedor-servicio-boton{
+                p{
+                    font-size: x-large;
+                    font-weight: 600;
+                    letter-spacing: 4px;
+                    background-color: rgb(199, 193, 193);
+                    padding:0.5em 0;
+                    border-bottom-right-radius:  15px;
+                    border-bottom-left-radius:  15px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

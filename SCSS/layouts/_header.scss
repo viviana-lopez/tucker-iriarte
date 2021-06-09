@@ -1,0 +1,6 @@
+/*LOGO HEADER*/
+.logo-header {
+    @media (max-width: 576px) {
+        padding-top: 3.5em;/*para que en dispositivos con pantallas de menos de 576px se genere espacio y el menú no tape el logo de la empresa*/
+    }
+}

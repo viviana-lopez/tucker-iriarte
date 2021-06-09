@@ -1,0 +1,23 @@
+/*FOOTER*/
+
+a {
+    text-decoration: none;/* para quitarle la línea a los íconos de las redes sociales*/
+}
+
+.footer {
+    display: flex;
+    padding: 1.5em 4em;
+    background-color: rgb(17, 17, 17);
+    p {
+        font-size: large;
+        font-weight: 600;
+        color: white;
+        padding: 0 1em;
+    }
+    i {
+        font-size: 1.5em;/*tamaño de los iconos de las redes sociales*/
+        color: white;/*color de la tipografía en el footer*/
+        padding: 0 0.5em;
+    }
+}
+

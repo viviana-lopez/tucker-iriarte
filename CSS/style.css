@@ -1,0 +1,631 @@
+@charset "UTF-8";
+/*RESETEO DE LOS FORMATOS ORIGINALES*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*PROPIEDADES FLEX BOX*/
+.error404 div .container .whatsapp404:hover, .error404 div .container a:hover, .whatsapp {
+  filter: drop-shadow(0 0 20px #2c2c2c);
+}
+
+/*ICONO WHATSAPP*/
+.whatsapp {
+  position: fixed;
+  right: 5em;
+  bottom: 3em;
+  width: 48px;
+  animation-name: efecto-whatsapp;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-delay: 5s;
+}
+.whatsapp:hover {
+  transform: scale(1.5, 1.5);
+}
+
+@keyframes efecto-whatsapp {
+  /*efecto de movimiento del whatsapp*/
+  0% {
+    transform: translateX(12px);
+  }
+  1% {
+    transform: translateX(-12px);
+  }
+  2% {
+    transform: translateX(12px);
+  }
+  3% {
+    transform: translateX(-12px);
+  }
+  4% {
+    transform: translateX(12px);
+  }
+  5% {
+    transform: translateX(-12px);
+  }
+  6% {
+    transform: translateX(12px);
+  }
+  7% {
+    transform: translateX(-12px);
+  }
+  8% {
+    transform: translateX(12px);
+  }
+  9% {
+    transform: translateX(0px);
+  }
+}
+/*SEPARADOR DECORATIVO*/
+/*TITULOS <p>*/
+/*RESETEO PARA <li> Y <a>*/
+/*BOTONES LATERALES - SERVICIOS.HTML*/
+/*FLEXBOX*/
+/*BOTONES LATERALES en todos los SERVICIOS.HTML*/
+.boton-izq i {
+  left: 0;
+  padding-left: 2em;
+  position: fixed;
+  bottom: 35%;
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(150, 147, 147, 0.2);
+  transition: all 2s;
+}
+.boton-izq i:hover {
+  transform: translateX(-2em);
+}
+@media (max-width: 575px) {
+  .boton-izq i {
+    padding-left: 0.5em;
+  }
+  .boton-izq i:hover {
+    transform: translateX(-0.5em);
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .boton-izq i {
+    padding-left: 1em;
+  }
+  .boton-izq i:hover {
+    transform: translateX(-1em);
+  }
+}
+
+.boton-der i {
+  right: 0;
+  padding-right: 2em;
+  position: fixed;
+  bottom: 35%;
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(150, 147, 147, 0.2);
+  transition: all 2s;
+}
+.boton-der i:hover {
+  transform: translateX(2em);
+}
+@media (max-width: 575px) {
+  .boton-der i {
+    padding-right: 0.5em;
+  }
+  .boton-der i:hover {
+    transform: translateX(0.5em);
+  }
+}
+@media (min-width: 576px) and (max-width: 991px) {
+  .boton-der i {
+    padding-right: 1em;
+  }
+  .boton-der i:hover {
+    transform: translateX(1em);
+  }
+}
+
+/* CARROUSEL*/
+.carrousel {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+/*SEPARADOR DECORATIVO*/
+/*TITULOS <p>*/
+/*RESETEO PARA <li> Y <a>*/
+/*BOTONES LATERALES - SERVICIOS.HTML*/
+/*FLEXBOX*/
+/*SEPARADORES*/
+.separador-arriba {
+  background-color: red;
+  height: 5px;
+  width: 100%;
+}
+
+.separador-subtitulos-derecha {
+  background-color: red;
+  height: 5px;
+  width: 70%;
+  margin-left: 30%;
+}
+
+.separador-subtitulos-izquierda {
+  background-color: red;
+  height: 5px;
+  width: 70%;
+}
+
+/*SEPARADOR DECORATIVO*/
+/*TITULOS <p>*/
+/*RESETEO PARA <li> Y <a>*/
+/*BOTONES LATERALES - SERVICIOS.HTML*/
+/*FLEXBOX*/
+/*PROPIEDADES FLEX BOX*/
+.error404 div .container .whatsapp404:hover, .error404 div .container a:hover, .whatsapp {
+  filter: drop-shadow(0 0 20px #2c2c2c);
+}
+
+/*ERROR 404*/
+.error404 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.error404 div div .imagen-fondo {
+  padding-left: 20%;
+}
+.error404 div div .imagen-fondo img {
+  width: 100%;
+}
+.error404 div .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5%;
+  padding-left: 0;
+  margin-left: 0;
+}
+.error404 div .container h1 {
+  font-size: x-large;
+  padding: 5% 5%;
+}
+.error404 div .container h2 {
+  font-size: large;
+  padding: 5% 5%;
+}
+.error404 div .container a {
+  align-self: center;
+  padding-bottom: 5%;
+}
+.error404 div .container a button {
+  width: 150px;
+}
+.error404 div .container a button img {
+  width: 32px;
+}
+.error404 div .container .whatsapp404 img {
+  width: 150px;
+}
+
+/*FOOTER*/
+a {
+  text-decoration: none;
+  /* para quitarle la línea a los íconos de las redes sociales*/
+}
+
+.footer {
+  display: flex;
+  padding: 1.5em 4em;
+  background-color: #111111;
+}
+.footer p {
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  padding: 0 1em;
+}
+.footer i {
+  font-size: 1.5em;
+  /*tamaño de los iconos de las redes sociales*/
+  color: white;
+  /*color de la tipografía en el footer*/
+  padding: 0 0.5em;
+}
+
+/*MODAL CON FORMULARIO DE CONTACTO*/
+.modal-header {
+  background-color: #101058;
+}
+.modal-header .modal-title {
+  color: white;
+}
+.modal-header button {
+  background-color: white;
+}
+
+.form-contact {
+  width: 90%;
+  padding-left: 10%;
+  padding-bottom: 10px;
+}
+.form-contact h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.form-contact .user-info {
+  display: flex;
+  flex-direction: column;
+}
+.form-contact .user-info label {
+  font-weight: 600;
+}
+.form-contact .user-info .user-info input {
+  width: 100%;
+  padding: 5px 15px 5px;
+  border: none;
+  border-bottom: 2px solid #d1d1d1;
+}
+.form-contact .user-info textarea {
+  width: 100%;
+  padding: 5px 15px 5px;
+  border: none;
+  border-bottom: 2px solid #d1d1d1;
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 150px;
+}
+.form-contact .user-info button {
+  width: 180px;
+  background: red;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: medium;
+  font-weight: 700;
+  align-self: flex-end;
+  margin: 20px;
+  cursor: pointer;
+}
+.form-contact .user-info button:hover {
+  background-color: #c21818;
+}
+
+/*VARIABLES*/
+/* todas aplicadas en _gracias.scss*/
+/*SEPARADOR DECORATIVO*/
+/*TITULOS <p>*/
+/*RESETEO PARA <li> Y <a>*/
+/*BOTONES LATERALES - SERVICIOS.HTML*/
+/*FLEXBOX*/
+/*   ---------DESAFIO 12 COMPLEMENTARIO--------   */
+/*
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+}
+
+$bg-body-gracias: rgba(0, 0, 0, 0.308);
+$bg-mensaje-gracias : white;
+$margin-zero: 0%;
+$border-px100: 100px;
+$padding-em1: 1em;
+*/
+/*GRACIAS.HTML - respuesta al enviar formulario de contacto*/
+.mensaje {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+.mensaje .mensaje-gracias {
+  display: flex;
+  justify-content: center;
+  /*mixin*/
+}
+.mensaje .mensaje-gracias .mensaje-exito {
+  text-align: center;
+  margin-top: 15%;
+  /*operadores de suma y resta en un mismo item*/
+  background-color: white;
+  border-radius: 25px;
+  /*operador de división*/
+  padding: 2em;
+  /*operador de multiplicación*/
+}
+.mensaje .mensaje-gracias .mensaje-exito button a {
+  text-decoration: none;
+  color: white;
+}
+
+/*SCSS ORIGINAL SIN APLICARLE EL DESAFÍO 12 COMPLEMENTARIO*/
+/* .mensaje {
+    background-color: rgba(0, 0, 0, 0.308);
+    .mensaje-gracias {
+        display: flex;
+        justify-content: center;
+        .mensaje-exito{
+            text-align: center;
+            margin-top: 15%;
+            background-color: white;
+            border-radius: 25px;
+            padding: 2em;
+            button a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}*/
+/*LOGO HEADER*/
+@media (max-width: 576px) {
+  .logo-header {
+    padding-top: 3.5em;
+    /*para que en dispositivos con pantallas de menos de 576px se genere espacio y el menú no tape el logo de la empresa*/
+  }
+}
+
+/*NAVBAR*/
+.navbar-container {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  top: 2em;
+  right: 5em;
+  z-index: 10;
+}
+@media (max-width: 576px) {
+  .navbar-container {
+    top: 1em;
+    right: 2em;
+  }
+}
+.navbar-container a:hover {
+  color: red !important;
+  border-bottom: 3px solid red !important;
+}
+
+/*NOSOTROS.HTML*/
+.nosotros-titulo {
+  padding: 0.5em;
+  text-align: right;
+}
+
+.equipos {
+  margin: 2em 4em;
+}
+.equipos .equipos-texto p {
+  font-size: large;
+  font-weight: 600;
+  padding: 1em;
+}
+.equipos .equipos-texto ul li {
+  padding-left: 2em;
+}
+.equipos .equipos-marcas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+  margin: 2em 0;
+}
+.equipos .equipos-marcas img {
+  width: 100px;
+}
+@media (max-width: 575px) {
+  .equipos .equipos-marcas img {
+    padding: 2em 0;
+  }
+}
+
+.historia-texto {
+  margin: 2em 4em;
+}
+
+/*SEPARADOR DECORATIVO*/
+/*TITULOS <p>*/
+/*RESETEO PARA <li> Y <a>*/
+/*BOTONES LATERALES - SERVICIOS.HTML*/
+/*FLEXBOX*/
+/*INDEX.HTML seccion CONTACTO*/
+.main-contacto {
+  margin-bottom: 0;
+}
+.main-contacto .main-contacto-titulo p {
+  padding: 0 1em;
+  font-size: xxx-large;
+  font-weight: 600;
+  text-align: right;
+}
+.main-contacto .main-contacto-contenido div div .main-contacto-ubicacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-contacto .main-contacto-contenido div div .main-contacto-ubicacion div .mapa {
+  margin-left: 3em;
+}
+
+/*.main-contacto{
+    margin-bottom: 0;
+    .main-contacto-titulo{
+        p {
+            @include titulos;
+            text-align: right;
+            margin-bottom: 0;
+        }
+    }
+    .main-contacto-contenido {
+        div {
+            div .main-contacto-telefonos .titulo {
+                h3 {}
+            }
+            div .contenedor-telefonos{
+                p {
+                    img {}
+                }
+                p {}
+            }
+            div .contenedor-email {
+                p {
+                    img {}
+                }
+            }
+            div {
+                button {}
+            }
+        }
+        div {
+            h3 {}
+            div .main-contacto-ubicacion {
+                div .contenedor-ubicacion {
+                    p .direccion {
+                        img .imagen-ubicacion-index {}
+                    }
+                    p {}
+                }
+                div .mapa {
+                    margin-left: 3em;
+                    iframe .googlemap-index {
+
+                    }
+                }
+            }
+        }
+    }
+} */
+/*SEPARADOR DECORATIVO*/
+/*TITULOS <p>*/
+/*RESETEO PARA <li> Y <a>*/
+/*BOTONES LATERALES - SERVICIOS.HTML*/
+/*FLEXBOX*/
+/*SECCION SERVICIOS - INDEX.HTML*/
+.main-servicios {
+  background-color: white;
+}
+.main-servicios p {
+  padding: 0 1em;
+  font-size: xxx-large;
+  font-weight: 600;
+}
+.main-servicios h1 {
+  padding: 1em 2em;
+  font-size: large;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: #101058;
+}
+
+.contenedor-botones-servicios {
+  justify-content: space-around;
+  margin: 1em;
+}
+.contenedor-botones-servicios .contenedor-servicio {
+  text-align: center;
+  padding-top: 2em;
+  margin-bottom: 3em;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  border: 5px solid #eeeaea;
+}
+.contenedor-botones-servicios .contenedor-servicio:hover {
+  filter: drop-shadow(0 0 20px #2c2c2c);
+}
+.contenedor-botones-servicios .contenedor-servicio a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.contenedor-botones-servicios .contenedor-servicio a:hover {
+  color: red !important;
+}
+.contenedor-botones-servicios .contenedor-servicio a .contenedor-servicio-imagen img {
+  width: 50%;
+}
+.contenedor-botones-servicios .contenedor-servicio a .imagen-fertilizaciones {
+  padding-top: 1em;
+}
+.contenedor-botones-servicios .contenedor-servicio a .imagen-pulverizaciones {
+  padding-top: 0.5em;
+}
+.contenedor-botones-servicios .contenedor-servicio a .contenedor-servicio-subtitulo ul {
+  padding: 0;
+}
+.contenedor-botones-servicios .contenedor-servicio a .contenedor-servicio-subtitulo ul li {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.contenedor-botones-servicios .contenedor-servicio a .contenedor-servicio-subtitulo ul li h3 {
+  font-size: medium;
+}
+.contenedor-botones-servicios .contenedor-servicio a .contenedor-servicio-boton p {
+  font-size: x-large;
+  font-weight: 600;
+  letter-spacing: 4px;
+  background-color: #c7c1c1;
+  padding: 0.5em 0;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  margin-bottom: 0;
+}
+
+/*SEPARADOR DECORATIVO*/
+/*TITULOS <p>*/
+/*RESETEO PARA <li> Y <a>*/
+/*BOTONES LATERALES - SERVICIOS.HTML*/
+/*FLEXBOX*/
+/*SERVICIOS.HTML*/
+.titulo-derecha {
+  text-align: right;
+}
+.titulo-derecha p {
+  padding: 0 1em;
+  font-size: xxx-large;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.servicio {
+  margin: 0 10%;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+.servicio ul {
+  padding: 1em;
+}
+.servicio ul li h2 {
+  font-size: large;
+}
+
+.beneficios {
+  margin: 0 10%;
+  margin-bottom: 2em;
+}
+.beneficios .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+}
+.beneficios .image-container .image-beneficios img {
+  width: 150px;
+}
+
+.titulo-video-informativo {
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  margin: 2em;
+}
+
+.video-siembra {
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
+/*# sourceMappingURL=style.css.map */

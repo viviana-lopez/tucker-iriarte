@@ -1,0 +1,30 @@
+@import "../utilities/extend";
+
+/*ICONO WHATSAPP*/
+.whatsapp {
+    position: fixed;
+    right: 5em;
+    bottom: 3em;
+    width: 48px;
+    animation-name: efecto-whatsapp;
+    animation-iteration-count: infinite;
+    animation-duration: 8s;
+    animation-delay: 5s;
+    @extend %shadow-lg;
+    &:hover{
+        transform: scale(1.5, 1.5);
+    }
+}
+  
+@keyframes efecto-whatsapp { /*efecto de movimiento del whatsapp*/
+    0% { transform:translateX(12px);}
+    1% { transform: translateX(-12px);}
+    2% { transform: translateX(12px);}
+    3% { transform: translateX(-12px);}
+    4% { transform: translateX(12px);}
+    5% { transform: translateX(-12px);}
+    6% { transform: translateX(12px);}
+    7% { transform: translateX(-12px);}
+    8% { transform: translateX(12px);}
+    9% { transform: translateX(0px);}
+}

@@ -1,0 +1,59 @@
+@import "../utilities/mixins";
+@import "../utilities/extend";
+
+/*ERROR 404*/
+
+.error404{          
+    div {          display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+      
+        div .imagen-fondo {
+            padding-left: 20%;
+            img {
+                width: 100%;
+            }
+        }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 5%;
+        padding-left: 0;
+        margin-left: 0;
+    
+        h1 {
+            font-size: x-large;
+            padding: 5% 5%;
+
+        }
+        h2 {
+            font-size: large;
+            padding: 5% 5%;
+        }
+        a {
+            align-self: center;
+            padding-bottom: 5%;
+            &:hover {
+                @extend %shadow-lg;
+            }
+            button {
+                width: 150px;
+                
+                img {
+                    width: 32px;
+                }
+            }
+        }
+        .whatsapp404 {
+            &:hover {
+                @extend %shadow-lg;
+            }
+            img {
+                width: 150px;
+            }
+        }
+    }
+}
+}

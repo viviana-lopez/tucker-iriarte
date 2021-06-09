@@ -1,0 +1,46 @@
+@import "../utilities/mixins";
+
+/*SERVICIOS.HTML*/
+.titulo-derecha {
+    text-align: right;
+    p{
+        @include titulos;
+        margin-bottom: 0;
+    }
+}
+
+.servicio {
+    margin: 0 10%;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    ul{
+        padding: 1em;
+        li {
+            h2 {font-size: large;}
+        }
+    }
+}
+
+.beneficios {
+    margin: 0 10%;
+    margin-bottom: 2em;
+    .image-container{
+        @include flexbox-full;
+        .image-beneficios{
+            img{
+            width: 150px;
+            }
+        }        
+    }
+}
+.titulo-video-informativo {
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    margin: 2em;
+}
+.video-siembra {
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+}

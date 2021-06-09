@@ -1,0 +1,44 @@
+/*SEPARADOR DECORATIVO*/
+@mixin separador ($color , $ancho) {
+    background-color: $color;
+    height: 5px;
+    width: $ancho;
+}
+
+/*TITULOS <p>*/
+@mixin titulos {
+    padding: 0 1em;
+    font-size: xxx-large;
+    font-weight: 600;
+}
+
+/*RESETEO PARA <li> Y <a>*/
+@mixin style-none {
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+
+/*BOTONES LATERALES - SERVICIOS.HTML*/
+@mixin boton-lateral{
+    position: fixed;
+    bottom: 35%;
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(150, 147, 147, 0.2);
+    transition: all 2s;
+}
+
+/*FLEXBOX*/
+@mixin flexbox-full {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-around;   
+}
+
+@mixin flexbox-center {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,15 @@
+@import "../utilities/mixins";
+
+/*SEPARADORES*/
+.separador-arriba {
+    @include separador (red, 100%)
+}
+
+.separador-subtitulos-derecha {
+    @include separador (red, 70%);
+    margin-left: 30%;
+}
+
+.separador-subtitulos-izquierda {
+    @include separador (red, 70%);
+}

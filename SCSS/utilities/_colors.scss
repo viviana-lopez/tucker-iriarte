@@ -1,0 +1,19 @@
+/*COLORES*/ /*LISTAS*/
+
+$colores: 
+    white, /**/
+    whitesmoke, /*background-color .contenedor-servicio CONTENEDOR BOTON SERVICIO INDEX.HTML*/
+    #eeeaea, /*backgroun-color .contenedor-servicio-boton CONTENEDOR BOTON SERVICIO INDEX.HTML*/
+    #d1d1d1, /*border .form-contact .user-info textarea FORMULARIO DE CONTACTO*/
+    black,
+    #111111, /*background-color FOOTER*/
+    rgba(0, 0, 0, 0.308),
+    red, /*background-color SEPARADORES DECORATIVOS*/
+    #101058, /*background-color .modal-header FORMULARIO DE CONTACTO*/
+    rgba(150, 147, 147, 0.3), /*background-color BOTON FLECHA LATERAL en los tres SERVICIOS.HTML*/
+    #2c2c2c; /*drop-shadow .contenedor-servicio:hover CONTENEDOR BOTON SERVICIO INDEX.HTML e ICONO ANIMADO WHATSAPP*/
+
+/*EXTEND*/    
+%shadow-lg {
+    filter: drop-shadow(0 0 20px rgb(44, 44, 44));
+}  
