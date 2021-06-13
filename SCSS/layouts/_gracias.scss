@@ -1,21 +1,6 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
 
-/*   ---------DESAFIO 12 COMPLEMENTARIO--------   */
-/*
-@mixin flexbox-center {
-    display: flex;
-    justify-content: center;
-}
-
-$bg-body-gracias: rgba(0, 0, 0, 0.308);
-$bg-mensaje-gracias : white;
-$margin-zero: 0%;
-$border-px100: 100px;
-$padding-em1: 1em;
-*/
-
-
 /*GRACIAS.HTML - respuesta al enviar formulario de contacto*/
 .mensaje {
     background-color: $bg-body-gracias;
@@ -35,22 +20,3 @@ $padding-em1: 1em;
     }
 }
 
-/*SCSS ORIGINAL SIN APLICARLE EL DESAFÍO 12 COMPLEMENTARIO*/
-/* .mensaje {
-    background-color: rgba(0, 0, 0, 0.308);
-    .mensaje-gracias {
-        display: flex;
-        justify-content: center;
-        .mensaje-exito{
-            text-align: center;
-            margin-top: 15%;
-            background-color: white;
-            border-radius: 25px;
-            padding: 2em;
-            button a{
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
-}*/

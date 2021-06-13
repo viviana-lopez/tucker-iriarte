@@ -302,19 +302,6 @@ a {
 /*RESETEO PARA <li> Y <a>*/
 /*BOTONES LATERALES - SERVICIOS.HTML*/
 /*FLEXBOX*/
-/*   ---------DESAFIO 12 COMPLEMENTARIO--------   */
-/*
-@mixin flexbox-center {
-    display: flex;
-    justify-content: center;
-}
-
-$bg-body-gracias: rgba(0, 0, 0, 0.308);
-$bg-mensaje-gracias : white;
-$margin-zero: 0%;
-$border-px100: 100px;
-$padding-em1: 1em;
-*/
 /*GRACIAS.HTML - respuesta al enviar formulario de contacto*/
 .mensaje {
   background-color: rgba(0, 0, 0, 0.308);
@@ -339,30 +326,14 @@ $padding-em1: 1em;
   color: white;
 }
 
-/*SCSS ORIGINAL SIN APLICARLE EL DESAFÍO 12 COMPLEMENTARIO*/
-/* .mensaje {
-    background-color: rgba(0, 0, 0, 0.308);
-    .mensaje-gracias {
-        display: flex;
-        justify-content: center;
-        .mensaje-exito{
-            text-align: center;
-            margin-top: 15%;
-            background-color: white;
-            border-radius: 25px;
-            padding: 2em;
-            button a{
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
-}*/
 /*LOGO HEADER*/
 @media (max-width: 576px) {
   .logo-header {
     padding-top: 3.5em;
     /*para que en dispositivos con pantallas de menos de 576px se genere espacio y el menú no tape el logo de la empresa*/
+  }
+  .logo-header img {
+    width: 90%;
   }
 }
 
