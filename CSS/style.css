@@ -346,17 +346,10 @@ a {
   right: 5em;
   z-index: 10;
 }
-
 @media (max-width: 576px) {
   .navbar-container {
     top: 1em;
     right: 2em;
-  }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 900px){
-  .navbar-container {
-    right: 1.7em;
   }
 }
 .navbar-container a:hover {
@@ -417,63 +410,25 @@ a {
   font-weight: 600;
   text-align: right;
 }
+.main-contacto .main-contacto-contenido {
+  justify-content: space-around;
+}
 .main-contacto .main-contacto-contenido div div .main-contacto-ubicacion {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 576px) {
+  .main-contacto .main-contacto-contenido div div .main-contacto-ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .main-contacto .main-contacto-contenido div div .main-contacto-ubicacion div .mapa {
   margin-left: 3em;
 }
 
-/*.main-contacto{
-    margin-bottom: 0;
-    .main-contacto-titulo{
-        p {
-            @include titulos;
-            text-align: right;
-            margin-bottom: 0;
-        }
-    }
-    .main-contacto-contenido {
-        div {
-            div .main-contacto-telefonos .titulo {
-                h3 {}
-            }
-            div .contenedor-telefonos{
-                p {
-                    img {}
-                }
-                p {}
-            }
-            div .contenedor-email {
-                p {
-                    img {}
-                }
-            }
-            div {
-                button {}
-            }
-        }
-        div {
-            h3 {}
-            div .main-contacto-ubicacion {
-                div .contenedor-ubicacion {
-                    p .direccion {
-                        img .imagen-ubicacion-index {}
-                    }
-                    p {}
-                }
-                div .mapa {
-                    margin-left: 3em;
-                    iframe .googlemap-index {
-
-                    }
-                }
-            }
-        }
-    }
-} */
 /*SEPARADOR DECORATIVO*/
 /*TITULOS <p>*/
 /*RESETEO PARA <li> Y <a>*/
@@ -498,7 +453,7 @@ a {
 
 .contenedor-botones-servicios {
   justify-content: space-around;
-  margin: 1em;
+  margin: 2em;
 }
 .contenedor-botones-servicios .contenedor-servicio {
   text-align: center;

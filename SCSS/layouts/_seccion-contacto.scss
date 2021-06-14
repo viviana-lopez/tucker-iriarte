@@ -11,64 +11,22 @@
         }
     }
     .main-contacto-contenido {
+        justify-content: space-around;
         div {
             div .main-contacto-ubicacion {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+                @media (max-width: 576px) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
                 div .mapa {
                     margin-left: 3em;
+                    
                 }
             }
         }
     }
 }
-
-/*.main-contacto{
-    margin-bottom: 0;
-    .main-contacto-titulo{
-        p {
-            @include titulos;
-            text-align: right;
-            margin-bottom: 0;
-        }
-    }
-    .main-contacto-contenido {
-        div {
-            div .main-contacto-telefonos .titulo {
-                h3 {}
-            }
-            div .contenedor-telefonos{
-                p {
-                    img {}
-                }
-                p {}
-            }
-            div .contenedor-email {
-                p {
-                    img {}
-                }
-            }
-            div {
-                button {}
-            }
-        }
-        div {
-            h3 {}
-            div .main-contacto-ubicacion {
-                div .contenedor-ubicacion {
-                    p .direccion {
-                        img .imagen-ubicacion-index {}
-                    }
-                    p {}
-                }
-                div .mapa {
-                    margin-left: 3em;
-                    iframe .googlemap-index {
-                     
-                    }
-                }
-            }
-        }
-    }
-} */
