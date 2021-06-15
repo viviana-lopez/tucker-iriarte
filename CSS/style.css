@@ -166,52 +166,7 @@
 /*BOTONES LATERALES - SERVICIOS.HTML*/
 /*FLEXBOX*/
 /*PROPIEDADES FLEX BOX*/
-.error404 div .container .whatsapp404:hover, .error404 div .container a:hover, .whatsapp {
-  filter: drop-shadow(0 0 20px #2c2c2c);
-}
 
-/*ERROR 404*/
-.error404 div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-}
-.error404 div div .imagen-fondo {
-  padding-left: 20%;
-}
-.error404 div div .imagen-fondo img {
-  width: 100%;
-}
-.error404 div .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 5%;
-  padding-left: 0;
-  margin-left: 0;
-}
-.error404 div .container h1 {
-  font-size: x-large;
-  padding: 5% 5%;
-}
-.error404 div .container h2 {
-  font-size: large;
-  padding: 5% 5%;
-}
-.error404 div .container a {
-  align-self: center;
-  padding-bottom: 5%;
-}
-.error404 div .container a button {
-  width: 150px;
-}
-.error404 div .container a button img {
-  width: 32px;
-}
-.error404 div .container .whatsapp404 img {
-  width: 150px;
-}
 
 /*FOOTER*/
 a {
