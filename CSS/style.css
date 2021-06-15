@@ -131,7 +131,7 @@
   justify-content: center;
   background-color: black;
 }
-.carrousel .carousel .carousel-inner .carousel-item img {
+.carrousel .carousel .carousel-inner .carousel-item .img-carrousel {
   width: 100%;
 }
 
