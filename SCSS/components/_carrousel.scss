@@ -4,4 +4,13 @@
     display: flex;
     justify-content: center;
     background-color: black;
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

@@ -131,6 +131,9 @@
   justify-content: center;
   background-color: black;
 }
+.carrousel .carousel .carousel-inner .carousel-item img {
+  width: 100%;
+}
 
 /*SEPARADOR DECORATIVO*/
 /*TITULOS <p>*/
