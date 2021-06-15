@@ -1,6 +1,4 @@
 <?php
-$destino = "lilith37.vl@gmail.com";
-
 $nombre = $_POST["nombre"];
 $correo = $_POST["correo"];
 $telefono = $_POST["telefono"];
@@ -11,7 +9,7 @@ $contenido = "Nombre: ". $nombre .
             "\nTelefono: " . $telefono . 
             "\nMensaje: " . $mensaje;
 
-mail($destino,"Contacto", $contenido);
+mail("lilith37.vl@gmail.com", $contenido);
 
 header("location:gracias.html");
 
