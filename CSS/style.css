@@ -24,39 +24,83 @@
 }
 .whatsapp:hover {
   transform: scale(1.5, 1.5);
+  -webkit-transform: scale(1.5, 1.5);
+  -moz-transform: scale(1.5, 1.5);
+  -o-transform: scale(1.5, 1.5);
+  -ms-transform: scale(1.5, 1.5);
 }
 
 @keyframes efecto-whatsapp {
   /*efecto de movimiento del whatsapp*/
   0% {
     transform: translateX(12px);
+    -webkit-transform: translateX(12px);
+    -moz-transform: translateX(12px);
+    -o-transform: translateX(12px);
+    -ms-transform: translateX(12px);
   }
   1% {
     transform: translateX(-12px);
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    -o-transform: translateX(-12px);
+    -ms-transform: translateX(-12px);
   }
   2% {
     transform: translateX(12px);
+    -webkit-transform: translateX(12px);
+    -moz-transform: translateX(12px);
+    -o-transform: translateX(12px);
+    -ms-transform: translateX(12px);
   }
   3% {
     transform: translateX(-12px);
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    -o-transform: translateX(-12px);
+    -ms-transform: translateX(-12px);
   }
   4% {
     transform: translateX(12px);
+    -webkit-transform: translateX(12px);
+    -moz-transform: translateX(12px);
+    -o-transform: translateX(12px);
+    -ms-transform: translateX(12px);
   }
   5% {
     transform: translateX(-12px);
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    -o-transform: translateX(-12px);
+    -ms-transform: translateX(-12px);
   }
   6% {
     transform: translateX(12px);
+    -webkit-transform: translateX(12px);
+    -moz-transform: translateX(12px);
+    -o-transform: translateX(12px);
+    -ms-transform: translateX(12px);
   }
   7% {
     transform: translateX(-12px);
+    -webkit-transform: translateX(-12px);
+    -moz-transform: translateX(-12px);
+    -o-transform: translateX(-12px);
+    -ms-transform: translateX(-12px);
   }
   8% {
     transform: translateX(12px);
+    -webkit-transform: translateX(12px);
+    -moz-transform: translateX(12px);
+    -o-transform: translateX(12px);
+    -ms-transform: translateX(12px);
   }
   9% {
     transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    -ms-transform: translateX(0px);
   }
 }
 /*SEPARADOR DECORATIVO*/
@@ -74,6 +118,9 @@
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(150, 147, 147, 0.2);
   transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
 }
 .boton-izq i:hover {
   transform: translateX(-2em);
@@ -104,6 +151,9 @@
   color: rgba(255, 255, 255, 0.7);
   background-color: rgba(150, 147, 147, 0.2);
   transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
 }
 .boton-der i:hover {
   transform: translateX(2em);
@@ -166,7 +216,52 @@
 /*BOTONES LATERALES - SERVICIOS.HTML*/
 /*FLEXBOX*/
 /*PROPIEDADES FLEX BOX*/
+.error404 div .container .whatsapp404:hover, .error404 div .container a:hover, .whatsapp {
+  filter: drop-shadow(0 0 20px #2c2c2c);
+}
 
+/*ERROR 404*/
+.error404 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.error404 div div .imagen-fondo {
+  padding-left: 20%;
+}
+.error404 div div .imagen-fondo img {
+  width: 100%;
+}
+.error404 div .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 5%;
+  padding-left: 0;
+  margin-left: 0;
+}
+.error404 div .container h1 {
+  font-size: x-large;
+  padding: 5% 5%;
+}
+.error404 div .container h2 {
+  font-size: large;
+  padding: 5% 5%;
+}
+.error404 div .container a {
+  align-self: center;
+  padding-bottom: 5%;
+}
+.error404 div .container a button {
+  width: 150px;
+}
+.error404 div .container a button img {
+  width: 32px;
+}
+.error404 div .container .whatsapp404 img {
+  width: 150px;
+}
 
 /*FOOTER*/
 a {
