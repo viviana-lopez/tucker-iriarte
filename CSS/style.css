@@ -176,12 +176,12 @@
 }
 
 /* CARROUSEL*/
-.carrousel {
+main .carrousel {
   display: flex;
   justify-content: center;
   background-color: black;
 }
-.carrousel div .carousel .carousel-inner .carousel-item .img-carrousel {
+main .carrousel div div .carousel div .carousel-inner div .carousel-item img .img-carrousel {
   width: 100%;
 }
 

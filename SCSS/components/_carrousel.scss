@@ -1,14 +1,14 @@
 /* CARROUSEL*/
-
+main {
 .carrousel {
     display: flex;
     justify-content: center;
     background-color: black;
     div {
-        .carousel {
-            .carousel-inner {
-                .carousel-item {
-                    .img-carrousel {
+        div .carousel {
+           div .carousel-inner {
+                div .carousel-item {
+                    img .img-carrousel {
                         width: 100%;
                     }
                 }
@@ -16,4 +16,5 @@
         }
     }
    
+}
 }
