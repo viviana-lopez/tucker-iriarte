@@ -175,15 +175,6 @@
   }
 }
 
-/* CARROUSEL*/
-main .carrousel {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-}
-main .carrousel div div .carousel div .carousel-inner div .carousel-item img .img-carrousel {
-  width: 100%;
-}
 
 /*SEPARADOR DECORATIVO*/
 /*TITULOS <p>*/
