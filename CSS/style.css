@@ -175,7 +175,6 @@
   }
 }
 
-
 /*SEPARADOR DECORATIVO*/
 /*TITULOS <p>*/
 /*RESETEO PARA <li> Y <a>*/
@@ -290,30 +289,30 @@ a {
   background-color: white;
 }
 
-.form-contact {
+.contact-form {
   width: 90%;
   padding-left: 10%;
   padding-bottom: 10px;
 }
-.form-contact h2 {
+.contact-form h2 {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 30px;
 }
-.form-contact .user-info {
+.contact-form .user-info {
   display: flex;
   flex-direction: column;
 }
-.form-contact .user-info label {
+.contact-form .user-info label {
   font-weight: 600;
 }
-.form-contact .user-info .user-info input {
+.contact-form .user-info .user-info input {
   width: 100%;
   padding: 5px 15px 5px;
   border: none;
   border-bottom: 2px solid #d1d1d1;
 }
-.form-contact .user-info textarea {
+.contact-form .user-info textarea {
   width: 100%;
   padding: 5px 15px 5px;
   border: none;
@@ -322,7 +321,7 @@ a {
   min-width: 100%;
   max-height: 150px;
 }
-.form-contact .user-info button {
+.contact-form .user-info button {
   width: 180px;
   background: red;
   padding: 10px;
@@ -335,7 +334,7 @@ a {
   margin: 20px;
   cursor: pointer;
 }
-.form-contact .user-info button:hover {
+.contact-form .user-info button:hover {
   background-color: #c21818;
 }
 
