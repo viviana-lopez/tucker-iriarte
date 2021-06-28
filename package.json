@@ -1,5 +1,5 @@
 {
-  "name": "desafio-11-lopez-viviana-1er-intento-php",
+  "name": "c",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,5 @@
     "url": "https://github.com/viviana-lopez/tucker-iriarte/issues"
   },
   "homepage": "https://github.com/viviana-lopez/tucker-iriarte#readme",
-  "description": ""
+  "description": "<h1 align=\"center\">Hi 👋, I'm Viviana</h1> <h3 align=\"center\">A passionate frontend developer from Argentina</h3>"
 }
